@@ -1,21 +1,19 @@
-// backend/server.js
-import express from 'express';
-import dotenv from 'dotenv';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import connectDB from './config/db.js';
-import productRoutes from './routes/productRoutes.js';
-import userRoutes from './routes/userRoutes.js';
+// server.js (CommonJS version)
+const express = require('express');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const connectDB = require('./config/db');
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to DB
 connectDB();
 
-// Routes
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 
