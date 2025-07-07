@@ -10,6 +10,7 @@ const calculateGreenScore = (product) => {
 
   // Normalize between 0–100
   if (score < 0) score = 0;
+
   return score;
 };
 

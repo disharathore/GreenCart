@@ -1,21 +1,47 @@
-// server.js (CommonJS version)
 const express = require('express');
-const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const cors = require('cors');
-const connectDB = require('./config/db');
-const productRoutes = require('./routes/productRoutes');
-const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
-const app = express();
-app.use(cors());
-app.use(express.json());
 
-connectDB();
+const app = express();
+
+// Log all requests
+app.use((req, res, next) => {
+  console.log(`📡 Incoming: ${req.method} ${req.url}`);
+  next();
+});
+
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+}));
+
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
+// ✅ Routes
+const productRoutes = require('./routes/productRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get('/test', (req, res) => {
+  res.send('✅ Backend test route working');
+});
+
+// ✅ MongoDB + Server Start
+const PORT = process.env.PORT || 5050;
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log(`✅ MongoDB connected`);
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  })
+  .catch((err) => {
+    console.error('❌ DB connection error:', err.message);
+  });
