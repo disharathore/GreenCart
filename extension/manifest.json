@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "EcoPrint – Green Shopping Overlay",
+  "version": "1.0",
+  "description": "Shows green scores & carbon footprint while shopping online",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["*://*.amazon.in/*", "*://*.flipkart.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.in/*", "*://*.flipkart.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}

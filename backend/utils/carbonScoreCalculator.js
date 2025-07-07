@@ -12,6 +12,12 @@ const calculateGreenScore = (product) => {
   if (score < 0) score = 0;
 
   return score;
+};  
+
+const estimateCarbonFootprint = (weightKg, distanceKm) => {
+  const transportFactor = 0.25; // 250g CO2 per km/kg
+  return +(weightKg * distanceKm * transportFactor).toFixed(2);
 };
+
 
 module.exports = calculateGreenScore;

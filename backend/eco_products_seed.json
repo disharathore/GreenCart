@@ -1,0 +1,661 @@
+[
+  {
+    "name": "Eco Product 1",
+    "brand": "EcoPure",
+    "category": "Non-organic",
+    "packagingType": "Glass",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 85,
+    "carbonFootprint": 5.96,
+    "suggestions": [
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 2",
+    "brand": "GreenEarth",
+    "category": "Recycled",
+    "packagingType": "Glass",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 9.91,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 3",
+    "brand": "NatureLuxe",
+    "category": "Vegan",
+    "packagingType": "Paper",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 3.47,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 4",
+    "brand": "NatureLuxe",
+    "category": "Non-organic",
+    "packagingType": "Plastic",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 35,
+    "carbonFootprint": 7.23,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 5",
+    "brand": "EcoPure",
+    "category": "Organic",
+    "packagingType": "Glass",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 1.25,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 6",
+    "brand": "OrganicZone",
+    "category": "Non-organic",
+    "packagingType": "Plastic",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 35,
+    "carbonFootprint": 3.22,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 7",
+    "brand": "NatureLuxe",
+    "category": "Organic",
+    "packagingType": "Plastic",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 70,
+    "carbonFootprint": 4.73,
+    "suggestions": [
+      "Avoid plastic packaging"
+    ]
+  },
+  {
+    "name": "Eco Product 8",
+    "brand": "OrganicZone",
+    "category": "Eco-Friendly",
+    "packagingType": "Plastic",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 1.3,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 9",
+    "brand": "NatureLuxe",
+    "category": "Vegan",
+    "packagingType": "Biodegradable",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 1.57,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 10",
+    "brand": "EcoPure",
+    "category": "Vegan",
+    "packagingType": "Glass",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 7.94,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 11",
+    "brand": "EcoPure",
+    "category": "Vegan",
+    "packagingType": "Metal",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 8.73,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 12",
+    "brand": "OrganicZone",
+    "category": "Organic",
+    "packagingType": "Paper",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 2.6,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 13",
+    "brand": "GreenEarth",
+    "category": "Eco-Friendly",
+    "packagingType": "Biodegradable",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 4.32,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 14",
+    "brand": "Sustaina",
+    "category": "Eco-Friendly",
+    "packagingType": "Biodegradable",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 1.93,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 15",
+    "brand": "Sustaina",
+    "category": "Non-organic",
+    "packagingType": "Biodegradable",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 65,
+    "carbonFootprint": 2.1,
+    "suggestions": [
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 16",
+    "brand": "NatureLuxe",
+    "category": "Vegan",
+    "packagingType": "Paper",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 3.59,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 17",
+    "brand": "EcoPure",
+    "category": "Recycled",
+    "packagingType": "Biodegradable",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 5.02,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 18",
+    "brand": "EcoPure",
+    "category": "Recycled",
+    "packagingType": "Plastic",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 5.65,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 19",
+    "brand": "NatureLuxe",
+    "category": "Recycled",
+    "packagingType": "Glass",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 6.07,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 20",
+    "brand": "GreenEarth",
+    "category": "Organic",
+    "packagingType": "Biodegradable",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 3.61,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 21",
+    "brand": "OrganicZone",
+    "category": "Non-organic",
+    "packagingType": "Metal",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 85,
+    "carbonFootprint": 7.54,
+    "suggestions": [
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 22",
+    "brand": "Sustaina",
+    "category": "Non-organic",
+    "packagingType": "Biodegradable",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 65,
+    "carbonFootprint": 3.86,
+    "suggestions": [
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 23",
+    "brand": "EcoPure",
+    "category": "Vegan",
+    "packagingType": "Plastic",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 4.97,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 24",
+    "brand": "OrganicZone",
+    "category": "Recycled",
+    "packagingType": "Paper",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 1.09,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 25",
+    "brand": "Sustaina",
+    "category": "Recycled",
+    "packagingType": "Plastic",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 3.45,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 26",
+    "brand": "GreenEarth",
+    "category": "Recycled",
+    "packagingType": "Biodegradable",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 3.29,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 27",
+    "brand": "GreenEarth",
+    "category": "Vegan",
+    "packagingType": "Paper",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 3.94,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 28",
+    "brand": "EcoPure",
+    "category": "Non-organic",
+    "packagingType": "Biodegradable",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 65,
+    "carbonFootprint": 3.53,
+    "suggestions": [
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 29",
+    "brand": "NatureLuxe",
+    "category": "Recycled",
+    "packagingType": "Plastic",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 7.54,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 30",
+    "brand": "Sustaina",
+    "category": "Non-organic",
+    "packagingType": "Plastic",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 55,
+    "carbonFootprint": 4.87,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 31",
+    "brand": "EcoPure",
+    "category": "Organic",
+    "packagingType": "Plastic",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 3.41,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 32",
+    "brand": "GreenEarth",
+    "category": "Vegan",
+    "packagingType": "Metal",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 6.06,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 33",
+    "brand": "EcoPure",
+    "category": "Eco-Friendly",
+    "packagingType": "Glass",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 4.16,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 34",
+    "brand": "EcoPure",
+    "category": "Eco-Friendly",
+    "packagingType": "Plastic",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 50,
+    "carbonFootprint": 1.9,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 35",
+    "brand": "Sustaina",
+    "category": "Eco-Friendly",
+    "packagingType": "Glass",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 7.17,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 36",
+    "brand": "GreenEarth",
+    "category": "Recycled",
+    "packagingType": "Paper",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 7.62,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 37",
+    "brand": "OrganicZone",
+    "category": "Vegan",
+    "packagingType": "Metal",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 8.32,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 38",
+    "brand": "EcoPure",
+    "category": "Eco-Friendly",
+    "packagingType": "Glass",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 6.56,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 39",
+    "brand": "NatureLuxe",
+    "category": "Non-organic",
+    "packagingType": "Plastic",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 35,
+    "carbonFootprint": 5.31,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 40",
+    "brand": "Sustaina",
+    "category": "Eco-Friendly",
+    "packagingType": "Metal",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 3.57,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 41",
+    "brand": "OrganicZone",
+    "category": "Recycled",
+    "packagingType": "Biodegradable",
+    "originCountry": "Brazil",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 9.46,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 42",
+    "brand": "EcoPure",
+    "category": "Recycled",
+    "packagingType": "Metal",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 5.09,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 43",
+    "brand": "OrganicZone",
+    "category": "Non-organic",
+    "packagingType": "Biodegradable",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 65,
+    "carbonFootprint": 4.42,
+    "suggestions": [
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 44",
+    "brand": "EcoPure",
+    "category": "Recycled",
+    "packagingType": "Paper",
+    "originCountry": "India",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 100,
+    "carbonFootprint": 3.71,
+    "suggestions": []
+  },
+  {
+    "name": "Eco Product 45",
+    "brand": "EcoPure",
+    "category": "Recycled",
+    "packagingType": "Biodegradable",
+    "originCountry": "USA",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 7.54,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 46",
+    "brand": "EcoPure",
+    "category": "Non-organic",
+    "packagingType": "Plastic",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 35,
+    "carbonFootprint": 3.91,
+    "suggestions": [
+      "Avoid plastic packaging",
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  },
+  {
+    "name": "Eco Product 47",
+    "brand": "NatureLuxe",
+    "category": "Vegan",
+    "packagingType": "Biodegradable",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 5.49,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 48",
+    "brand": "NatureLuxe",
+    "category": "Vegan",
+    "packagingType": "Metal",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 8.23,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 49",
+    "brand": "GreenEarth",
+    "category": "Recycled",
+    "packagingType": "Paper",
+    "originCountry": "China",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 80,
+    "carbonFootprint": 6.75,
+    "suggestions": [
+      "Prefer local sourcing"
+    ]
+  },
+  {
+    "name": "Eco Product 50",
+    "brand": "Sustaina",
+    "category": "Non-organic",
+    "packagingType": "Glass",
+    "originCountry": "Germany",
+    "imageUrl": "https://via.placeholder.com/150",
+    "greenScore": 65,
+    "carbonFootprint": 8.32,
+    "suggestions": [
+      "Prefer local sourcing",
+      "Choose organic materials"
+    ]
+  }
+]
