@@ -1,34 +1,40 @@
-// content.js
-const products = document.querySelectorAll('[data-component-type="s-search-result"]');
+(async function () {
+  console.log("🟢 EcoPrint Extension Loaded!");
 
-products.forEach(async (product) => {
-  const titleElement = product.querySelector('h2 a span');
-  if (!titleElement) return;
+  const API_URL = "http://localhost:5050/api/products";
 
-  const name = titleElement.innerText.trim();
-  if (!name) return;
+  const response = await fetch(API_URL);
+  const products = await response.json();
 
-  // Call your backend
-  const response = await fetch('http://localhost:5050/api/products');
-  const data = await response.json();
+  const cards = document.querySelectorAll('[data-component-type="s-search-result"]');
 
-  const match = data.find(p => name.toLowerCase().includes(p.name.toLowerCase()));
+  cards.forEach((card) => {
+    const titleElem = card.querySelector('h2 span');
+    if (!titleElem) return;
 
-  if (match) {
+    const title = titleElem.textContent.toLowerCase();
+    const match = products.find(p =>
+      title.includes(p.name.toLowerCase().split(' ')[0])
+    );
+
+    if (!match) return;
+
     const badge = document.createElement('div');
-    badge.innerText = `🌱 Score: ${match.greenScore}`;
+    badge.innerText = `🌿 ${match.greenScore}/100`;
     badge.style.cssText = `
       position: absolute;
-      top: 5px;
-      left: 5px;
-      background: ${match.greenScore > 80 ? 'green' : match.greenScore > 50 ? 'orange' : 'red'};
+      top: 10px;
+      left: 10px;
+      background: ${match.greenScore > 80 ? '#16a34a' : match.greenScore > 50 ? '#facc15' : '#ef4444'};
       color: white;
+      font-weight: bold;
+      font-size: 12px;
       padding: 4px 6px;
       border-radius: 5px;
-      font-size: 12px;
       z-index: 1000;
     `;
-    product.style.position = 'relative';
-    product.appendChild(badge);
-  }
-});
+
+    card.style.position = 'relative';
+    card.appendChild(badge);
+  });
+})();
