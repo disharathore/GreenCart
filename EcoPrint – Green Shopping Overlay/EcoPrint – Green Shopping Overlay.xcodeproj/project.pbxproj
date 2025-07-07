@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C96C556C2E1C0F4A00E5E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C556B2E1C0F4A00E5E286 /* AppDelegate.swift */; };
+		C96C556E2E1C0F4A00E5E286 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C556D2E1C0F4A00E5E286 /* SceneDelegate.swift */; };
+		C96C55712E1C0F4A00E5E286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96C556F2E1C0F4A00E5E286 /* LaunchScreen.storyboard */; };
+		C96C55742E1C0F4A00E5E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96C55722E1C0F4A00E5E286 /* Main.storyboard */; };
+		C96C557D2E1C0F4A00E5E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C557C2E1C0F4A00E5E286 /* AppDelegate.swift */; };
+		C96C55802E1C0F4A00E5E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96C557E2E1C0F4A00E5E286 /* Main.storyboard */; };
+		C96C55882E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C96C55872E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C96C55922E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C96C55912E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C96C55982E1C0F4A00E5E286 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C96C555B2E1C0F4900E5E286 /* Main.html */; };
+		C96C55992E1C0F4A00E5E286 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = C96C555B2E1C0F4900E5E286 /* Main.html */; };
+		C96C559A2E1C0F4A00E5E286 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C96C555D2E1C0F4900E5E286 /* Icon.png */; };
+		C96C559B2E1C0F4A00E5E286 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C96C555D2E1C0F4900E5E286 /* Icon.png */; };
+		C96C559C2E1C0F4A00E5E286 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C96C555E2E1C0F4900E5E286 /* Style.css */; };
+		C96C559D2E1C0F4A00E5E286 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = C96C555E2E1C0F4900E5E286 /* Style.css */; };
+		C96C559E2E1C0F4A00E5E286 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C555F2E1C0F4900E5E286 /* Script.js */; };
+		C96C559F2E1C0F4A00E5E286 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C555F2E1C0F4900E5E286 /* Script.js */; };
+		C96C55A02E1C0F4A00E5E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C55602E1C0F4900E5E286 /* ViewController.swift */; };
+		C96C55A12E1C0F4A00E5E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C55602E1C0F4900E5E286 /* ViewController.swift */; };
+		C96C55A22E1C0F4A00E5E286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96C55612E1C0F4A00E5E286 /* Assets.xcassets */; };
+		C96C55A32E1C0F4A00E5E286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96C55612E1C0F4A00E5E286 /* Assets.xcassets */; };
+		C96C55A42E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C55632E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift */; };
+		C96C55A52E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96C55632E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift */; };
+		C96C55BD2E1C0F4A00E5E286 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B72E1C0F4A00E5E286 /* icon.png */; };
+		C96C55BE2E1C0F4A00E5E286 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B82E1C0F4A00E5E286 /* popup.js */; };
+		C96C55BF2E1C0F4A00E5E286 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B92E1C0F4A00E5E286 /* background.js */; };
+		C96C55C02E1C0F4A00E5E286 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BA2E1C0F4A00E5E286 /* popup.html */; };
+		C96C55C12E1C0F4A00E5E286 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BB2E1C0F4A00E5E286 /* manifest.json */; };
+		C96C55C22E1C0F4A00E5E286 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BC2E1C0F4A00E5E286 /* content.js */; };
+		C96C55C32E1C0F4A00E5E286 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B72E1C0F4A00E5E286 /* icon.png */; };
+		C96C55C42E1C0F4A00E5E286 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B82E1C0F4A00E5E286 /* popup.js */; };
+		C96C55C52E1C0F4A00E5E286 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55B92E1C0F4A00E5E286 /* background.js */; };
+		C96C55C62E1C0F4A00E5E286 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BA2E1C0F4A00E5E286 /* popup.html */; };
+		C96C55C72E1C0F4A00E5E286 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BB2E1C0F4A00E5E286 /* manifest.json */; };
+		C96C55C82E1C0F4A00E5E286 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C96C55BC2E1C0F4A00E5E286 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96C55892E1C0F4A00E5E286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96C55552E1C0F4900E5E286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96C55862E1C0F4A00E5E286;
+			remoteInfo = "EcoPrint – Green Shopping Overlay Extension (iOS)";
+		};
+		C96C55932E1C0F4A00E5E286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96C55552E1C0F4900E5E286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96C55902E1C0F4A00E5E286;
+			remoteInfo = "EcoPrint – Green Shopping Overlay Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C96C55AB2E1C0F4A00E5E286 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C96C55882E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55B22E1C0F4A00E5E286 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C96C55922E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C96C555C2E1C0F4900E5E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		C96C555D2E1C0F4900E5E286 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C96C555E2E1C0F4900E5E286 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		C96C555F2E1C0F4900E5E286 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		C96C55602E1C0F4900E5E286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C96C55612E1C0F4A00E5E286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C96C55632E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C96C55682E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EcoPrint – Green Shopping Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96C556B2E1C0F4A00E5E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C96C556D2E1C0F4A00E5E286 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C96C55702E1C0F4A00E5E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C96C55732E1C0F4A00E5E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96C55752E1C0F4A00E5E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96C557A2E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EcoPrint – Green Shopping Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96C557C2E1C0F4A00E5E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C96C557F2E1C0F4A00E5E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96C55812E1C0F4A00E5E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96C55822E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EcoPrint – Green Shopping Overlay.entitlements"; sourceTree = "<group>"; };
+		C96C55872E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EcoPrint – Green Shopping Overlay Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96C558C2E1C0F4A00E5E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96C55912E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EcoPrint – Green Shopping Overlay Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96C55962E1C0F4A00E5E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96C55972E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EcoPrint – Green Shopping Overlay.entitlements"; sourceTree = "<group>"; };
+		C96C55B72E1C0F4A00E5E286 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../extension/icon.png; sourceTree = "<group>"; };
+		C96C55B82E1C0F4A00E5E286 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../extension/popup.js; sourceTree = "<group>"; };
+		C96C55B92E1C0F4A00E5E286 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../extension/background.js; sourceTree = "<group>"; };
+		C96C55BA2E1C0F4A00E5E286 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../extension/popup.html; sourceTree = "<group>"; };
+		C96C55BB2E1C0F4A00E5E286 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../extension/manifest.json; sourceTree = "<group>"; };
+		C96C55BC2E1C0F4A00E5E286 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../extension/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96C55652E1C0F4A00E5E286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55772E1C0F4A00E5E286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55842E1C0F4A00E5E286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C558E2E1C0F4A00E5E286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C96C55542E1C0F4900E5E286 = {
+			isa = PBXGroup;
+			children = (
+				C96C55592E1C0F4900E5E286 /* Shared (App) */,
+				C96C55622E1C0F4A00E5E286 /* Shared (Extension) */,
+				C96C556A2E1C0F4A00E5E286 /* iOS (App) */,
+				C96C557B2E1C0F4A00E5E286 /* macOS (App) */,
+				C96C558B2E1C0F4A00E5E286 /* iOS (Extension) */,
+				C96C55952E1C0F4A00E5E286 /* macOS (Extension) */,
+				C96C55692E1C0F4A00E5E286 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96C55592E1C0F4900E5E286 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C55602E1C0F4900E5E286 /* ViewController.swift */,
+				C96C55612E1C0F4A00E5E286 /* Assets.xcassets */,
+				C96C555A2E1C0F4900E5E286 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		C96C555A2E1C0F4900E5E286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C96C555B2E1C0F4900E5E286 /* Main.html */,
+				C96C555D2E1C0F4900E5E286 /* Icon.png */,
+				C96C555E2E1C0F4900E5E286 /* Style.css */,
+				C96C555F2E1C0F4900E5E286 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C96C55622E1C0F4A00E5E286 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C55B62E1C0F4A00E5E286 /* Resources */,
+				C96C55632E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		C96C55692E1C0F4A00E5E286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96C55682E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */,
+				C96C557A2E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */,
+				C96C55872E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */,
+				C96C55912E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96C556A2E1C0F4A00E5E286 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C556B2E1C0F4A00E5E286 /* AppDelegate.swift */,
+				C96C556D2E1C0F4A00E5E286 /* SceneDelegate.swift */,
+				C96C556F2E1C0F4A00E5E286 /* LaunchScreen.storyboard */,
+				C96C55722E1C0F4A00E5E286 /* Main.storyboard */,
+				C96C55752E1C0F4A00E5E286 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		C96C557B2E1C0F4A00E5E286 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C557C2E1C0F4A00E5E286 /* AppDelegate.swift */,
+				C96C557E2E1C0F4A00E5E286 /* Main.storyboard */,
+				C96C55812E1C0F4A00E5E286 /* Info.plist */,
+				C96C55822E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		C96C558B2E1C0F4A00E5E286 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C558C2E1C0F4A00E5E286 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C96C55952E1C0F4A00E5E286 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				C96C55962E1C0F4A00E5E286 /* Info.plist */,
+				C96C55972E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		C96C55B62E1C0F4A00E5E286 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C96C55B72E1C0F4A00E5E286 /* icon.png */,
+				C96C55B82E1C0F4A00E5E286 /* popup.js */,
+				C96C55B92E1C0F4A00E5E286 /* background.js */,
+				C96C55BA2E1C0F4A00E5E286 /* popup.html */,
+				C96C55BB2E1C0F4A00E5E286 /* manifest.json */,
+				C96C55BC2E1C0F4A00E5E286 /* content.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96C55672E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96C55AC2E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay (iOS)" */;
+			buildPhases = (
+				C96C55642E1C0F4A00E5E286 /* Sources */,
+				C96C55652E1C0F4A00E5E286 /* Frameworks */,
+				C96C55662E1C0F4A00E5E286 /* Resources */,
+				C96C55AB2E1C0F4A00E5E286 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96C558A2E1C0F4A00E5E286 /* PBXTargetDependency */,
+			);
+			name = "EcoPrint – Green Shopping Overlay (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "EcoPrint – Green Shopping Overlay (iOS)";
+			productReference = C96C55682E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96C55792E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96C55B32E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay (macOS)" */;
+			buildPhases = (
+				C96C55762E1C0F4A00E5E286 /* Sources */,
+				C96C55772E1C0F4A00E5E286 /* Frameworks */,
+				C96C55782E1C0F4A00E5E286 /* Resources */,
+				C96C55B22E1C0F4A00E5E286 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96C55942E1C0F4A00E5E286 /* PBXTargetDependency */,
+			);
+			name = "EcoPrint – Green Shopping Overlay (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "EcoPrint – Green Shopping Overlay (macOS)";
+			productReference = C96C557A2E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96C55862E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96C55A82E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay Extension (iOS)" */;
+			buildPhases = (
+				C96C55832E1C0F4A00E5E286 /* Sources */,
+				C96C55842E1C0F4A00E5E286 /* Frameworks */,
+				C96C55852E1C0F4A00E5E286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EcoPrint – Green Shopping Overlay Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "EcoPrint – Green Shopping Overlay Extension (iOS)";
+			productReference = C96C55872E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C96C55902E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96C55AF2E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay Extension (macOS)" */;
+			buildPhases = (
+				C96C558D2E1C0F4A00E5E286 /* Sources */,
+				C96C558E2E1C0F4A00E5E286 /* Frameworks */,
+				C96C558F2E1C0F4A00E5E286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EcoPrint – Green Shopping Overlay Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "EcoPrint – Green Shopping Overlay Extension (macOS)";
+			productReference = C96C55912E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96C55552E1C0F4900E5E286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					C96C55672E1C0F4A00E5E286 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C96C55792E1C0F4A00E5E286 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C96C55862E1C0F4A00E5E286 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C96C55902E1C0F4A00E5E286 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = C96C55582E1C0F4900E5E286 /* Build configuration list for PBXProject "EcoPrint – Green Shopping Overlay" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C96C55542E1C0F4900E5E286;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C96C55692E1C0F4A00E5E286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96C55672E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay (iOS) */,
+				C96C55792E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay (macOS) */,
+				C96C55862E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (iOS) */,
+				C96C55902E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96C55662E1C0F4A00E5E286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C559A2E1C0F4A00E5E286 /* Icon.png in Resources */,
+				C96C55712E1C0F4A00E5E286 /* LaunchScreen.storyboard in Resources */,
+				C96C55982E1C0F4A00E5E286 /* Main.html in Resources */,
+				C96C559E2E1C0F4A00E5E286 /* Script.js in Resources */,
+				C96C55A22E1C0F4A00E5E286 /* Assets.xcassets in Resources */,
+				C96C55742E1C0F4A00E5E286 /* Main.storyboard in Resources */,
+				C96C559C2E1C0F4A00E5E286 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55782E1C0F4A00E5E286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C559B2E1C0F4A00E5E286 /* Icon.png in Resources */,
+				C96C559D2E1C0F4A00E5E286 /* Style.css in Resources */,
+				C96C55802E1C0F4A00E5E286 /* Main.storyboard in Resources */,
+				C96C559F2E1C0F4A00E5E286 /* Script.js in Resources */,
+				C96C55A32E1C0F4A00E5E286 /* Assets.xcassets in Resources */,
+				C96C55992E1C0F4A00E5E286 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55852E1C0F4A00E5E286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55C82E1C0F4A00E5E286 /* content.js in Resources */,
+				C96C55C32E1C0F4A00E5E286 /* icon.png in Resources */,
+				C96C55C62E1C0F4A00E5E286 /* popup.html in Resources */,
+				C96C55C72E1C0F4A00E5E286 /* manifest.json in Resources */,
+				C96C55C52E1C0F4A00E5E286 /* background.js in Resources */,
+				C96C55C42E1C0F4A00E5E286 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C558F2E1C0F4A00E5E286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55C22E1C0F4A00E5E286 /* content.js in Resources */,
+				C96C55BD2E1C0F4A00E5E286 /* icon.png in Resources */,
+				C96C55C02E1C0F4A00E5E286 /* popup.html in Resources */,
+				C96C55C12E1C0F4A00E5E286 /* manifest.json in Resources */,
+				C96C55BF2E1C0F4A00E5E286 /* background.js in Resources */,
+				C96C55BE2E1C0F4A00E5E286 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96C55642E1C0F4A00E5E286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55A02E1C0F4A00E5E286 /* ViewController.swift in Sources */,
+				C96C556C2E1C0F4A00E5E286 /* AppDelegate.swift in Sources */,
+				C96C556E2E1C0F4A00E5E286 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55762E1C0F4A00E5E286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55A12E1C0F4A00E5E286 /* ViewController.swift in Sources */,
+				C96C557D2E1C0F4A00E5E286 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C55832E1C0F4A00E5E286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55A42E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96C558D2E1C0F4A00E5E286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96C55A52E1C0F4A00E5E286 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96C558A2E1C0F4A00E5E286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96C55862E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (iOS) */;
+			targetProxy = C96C55892E1C0F4A00E5E286 /* PBXContainerItemProxy */;
+		};
+		C96C55942E1C0F4A00E5E286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96C55902E1C0F4A00E5E286 /* EcoPrint – Green Shopping Overlay Extension (macOS) */;
+			targetProxy = C96C55932E1C0F4A00E5E286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C96C555B2E1C0F4900E5E286 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96C555C2E1C0F4900E5E286 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		C96C556F2E1C0F4A00E5E286 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96C55702E1C0F4A00E5E286 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C96C55722E1C0F4A00E5E286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96C55732E1C0F4A00E5E286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C96C557E2E1C0F4A00E5E286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96C557F2E1C0F4A00E5E286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96C55A62E1C0F4A00E5E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C96C55A72E1C0F4A00E5E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C96C55A92E1C0F4A00E5E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U27SGG5JCG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.disharathore.EcoPrint;
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96C55AA2E1C0F4A00E5E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U27SGG5JCG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.disharathore.EcoPrint;
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96C55AD2E1C0F4A00E5E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U27SGG5JCG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96C55AE2E1C0F4A00E5E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U27SGG5JCG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96C55B02E1C0F4A00E5E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/EcoPrint – Green Shopping Overlay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay.Extension";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C96C55B12E1C0F4A00E5E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/EcoPrint – Green Shopping Overlay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay.Extension";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C96C55B42E1C0F4A00E5E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/EcoPrint – Green Shopping Overlay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C96C55B52E1C0F4A00E5E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/EcoPrint – Green Shopping Overlay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EcoPrint – Green Shopping Overlay";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.EcoPrint---Green-Shopping-Overlay";
+				PRODUCT_NAME = "EcoPrint – Green Shopping Overlay";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96C55582E1C0F4900E5E286 /* Build configuration list for PBXProject "EcoPrint – Green Shopping Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96C55A62E1C0F4A00E5E286 /* Debug */,
+				C96C55A72E1C0F4A00E5E286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96C55A82E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96C55A92E1C0F4A00E5E286 /* Debug */,
+				C96C55AA2E1C0F4A00E5E286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96C55AC2E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96C55AD2E1C0F4A00E5E286 /* Debug */,
+				C96C55AE2E1C0F4A00E5E286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96C55AF2E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96C55B02E1C0F4A00E5E286 /* Debug */,
+				C96C55B12E1C0F4A00E5E286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96C55B32E1C0F4A00E5E286 /* Build configuration list for PBXNativeTarget "EcoPrint – Green Shopping Overlay (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96C55B42E1C0F4A00E5E286 /* Debug */,
+				C96C55B52E1C0F4A00E5E286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C96C55552E1C0F4900E5E286 /* Project object */;
+}
