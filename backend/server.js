@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors');
-
 dotenv.config();
+const cors = require('cors');
+const analyzeRoute = require('./routes/analyzeRoute');
 
 const app = express();
 
@@ -19,10 +19,9 @@ app.use(cors({
   allowedHeaders: ['Content-Type'],
 }));
 
-
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
+app.use(express.urlencoded({ extended:true }));
+app.use('/api/analyze', analyzeRoute);
 
 // ✅ Routes
 const productRoutes = require('./routes/productRoutes');
@@ -39,7 +38,7 @@ app.get('/test', (req, res) => {
 const PORT = process.env.PORT || 5050;
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
-    console.log(`✅ MongoDB connected`);
+    console.log(`✅ MongoDB connected`);  
     app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
   })
   .catch((err) => {

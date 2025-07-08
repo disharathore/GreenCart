@@ -1,48 +1,29 @@
-// frontend/src/components/ProductCard.jsx
-import React from 'react';
+// frontend/src/App.jsx
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import ProductCard from './components/ProductCard';
 
-const getBadgeColor = (score) => {
-  if (score > 80) return 'bg-green-500';
-  if (score >= 50) return 'bg-yellow-400';
-  return 'bg-red-500';
-};
+const App = () => {
+  const [products, setProducts] = useState([]);
 
-const ProductCard = ({ product }) => {
+  useEffect(() => {
+    axios.get('http://localhost:5050/api/products')
+      .then(res => setProducts(res.data))
+      .catch(err => console.error('❌ Error fetching products:', err));
+  }, []);
+
   return (
-    <div className="p-4 rounded-2xl shadow-lg bg-white hover:scale-105 transition-transform duration-300 w-full max-w-sm">
-      <img
-        src={product.imageUrl}
-        alt={product.name}
-        className="w-full h-48 object-cover rounded-xl"
-      />
-      <h2 className="text-lg font-bold mt-2 text-gray-800">{product.name}</h2>
-      <p className="text-sm text-gray-500">Brand: {product.brand}</p>
-      <p className="text-sm text-gray-500">Category: {product.category}</p>
-      <p className="text-sm text-gray-500 mb-2">Origin: {product.originCountry}</p>
-
-      <div className="flex items-center gap-2">
-        <span
-          className={`px-3 py-1 text-white text-xs font-bold rounded-full ${getBadgeColor(
-            product.greenScore
-          )}`}
-        >
-          ♻️ {product.greenScore} Green Score
-        </span>
-        <span className="text-xs text-gray-400">{product.carbonFootprint} kg CO₂</span>
+    <div className="min-h-screen bg-gray-100 py-10 px-6">
+      <h1 className="text-3xl font-bold text-center text-green-700 mb-8">
+        🌱 EcoPrint – Sustainable Product Explorer
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        {products.map(product => (
+          <ProductCard key={product._id} product={product} />
+        ))}
       </div>
-
-      {product.suggestions?.length > 0 && (
-        <div className="mt-3 text-sm text-gray-600">
-          <span className="font-medium text-gray-700">Suggestions:</span>
-          <ul className="list-disc ml-5 mt-1">
-            {product.suggestions.map((tip, idx) => (
-              <li key={idx}>{tip}</li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 };
 
-export default ProductCard;
+export default App;
