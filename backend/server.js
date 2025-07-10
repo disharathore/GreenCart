@@ -1,11 +1,13 @@
-// server.js (CommonJS version)
+// server.js
 const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const connectDB = require('./config/db');
+
 const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
+const analyzeRoutes = require('./routes/analyze'); // ✅ ADD THIS
 
 dotenv.config();
 const app = express();
@@ -16,6 +18,7 @@ connectDB();
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/analyze', analyzeRoutes); // ✅ ADD THIS
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
