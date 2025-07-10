@@ -19,28 +19,30 @@ router.post('/', async (req, res) => {
   // 🧠 Step 2: If score too low, fallback to OpenAI
   try {
     const openaiRes = await axios.post(
-      'https://api.openai.com/v1/chat/completions',
+  'https://api.openai.com/v1/chat/completions',
+  {
+    model: "gpt-3.5-turbo",
+    messages: [
       {
-        model: "gpt-3.5-turbo",
-        messages: [
-          {
-            role: "system",
-            content: "You are an eco product inspector. Score the product from 0 to 100 based on eco-friendliness. Use packaging, origin, category, etc. Return a JSON with greenScore, reason, and suggestion.",
-          },
-          {
-            role: "user",
-            content: `Analyze the following product: "${title}"`,
-          }
-        ],
-        temperature: 0.7
+        role: "system",
+        content: "You are an eco product inspector. Score the product from 0 to 100 based on eco-friendliness. Use packaging, origin, category, etc. Return a JSON with greenScore, reason, and suggestion.",
       },
       {
-        headers: {
-          'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-          'Content-Type': 'application/json'
-        }
+        role: "user",
+        content: `Analyze the following product: "${title}"`,
       }
-    );
+    ],
+    temperature: 0.7
+  },
+  {
+    headers: {
+      'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    timeout: 10000 // ⏱️ 10 seconds timeout
+  }
+);
+
 
     const text = openaiRes.data.choices[0].message.content;
 
