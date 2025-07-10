@@ -1,7 +1,7 @@
 (async function () {
   console.log("🟢 EcoPrint Extension Loaded!");
-
-  const API_URL = "http://localhost:5050/api/analyze";
+  
+  const API_BASE_URL = "https://greencart-0gco.onrender.com";
   const cards = document.querySelectorAll('[data-component-type="s-search-result"]');
 
   for (const card of cards) {
