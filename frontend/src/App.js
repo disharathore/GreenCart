@@ -5,7 +5,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5050/api/products')
+    axios.get('https://greencart-0gco.onrender.com/api/products')
       .then((res) => {
        console.log("🟢 Received in frontend:", res.data);
         setProducts(res.data);
