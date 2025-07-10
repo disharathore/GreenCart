@@ -1,6 +1,55 @@
 (async function () {
   console.log("🟢 EcoPrint Extension Loaded!");
-  
+
+  // 🧩 Inject modal HTML
+  const modalHTML = `
+    <div id="eco-modal" style="
+      display: none;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 2px solid #16a34a;
+      border-radius: 10px;
+      z-index: 9999;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      max-width: 400px;
+      font-family: Arial;
+    ">
+      <h2 id="eco-modal-title" style="margin-top: 0;"></h2>
+      <p id="eco-modal-msg"></p>
+      <ul id="eco-suggestions"></ul>
+      <button onclick="document.getElementById('eco-modal').style.display='none'" style="
+        margin-top: 10px;
+        padding: 6px 10px;
+        background: #16a34a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      ">Close</button>
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+  // 🧠 Modal logic
+  function showEcoModal(title, message, suggestions) {
+    const modal = document.getElementById('eco-modal');
+    document.getElementById('eco-modal-title').innerText = title;
+    document.getElementById('eco-modal-msg').innerText = message;
+
+    const suggestionsList = document.getElementById('eco-suggestions');
+    suggestionsList.innerHTML = "";
+    suggestions.forEach(item => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="${item.link}" target="_blank">${item.name}</a>`;
+      suggestionsList.appendChild(li);
+    });
+
+    modal.style.display = 'block';
+  }
+
   const API_URL = "https://greencart-0gco.onrender.com/api/analyze";
   const cards = document.querySelectorAll('[data-component-type="s-search-result"]');
 
@@ -19,13 +68,16 @@
       });
 
       const result = await response.json();
-
       if (!result.greenScore) continue;
 
-      // 🏷️ Badge Element
+      // 🏷️ Badge
       const badge = document.createElement('div');
       badge.innerText = `🌿 ${result.greenScore}/100`;
-      badge.title = result.reason || "Eco Score";
+      badge.title = result.greenScore > 80
+        ? "Excellent environmental score!"
+        : result.greenScore > 50
+          ? "Moderate eco score. Better options available."
+          : "Low eco score. Consider greener alternatives.";
       badge.style.cssText = `
         position: absolute;
         top: 10px;
@@ -40,12 +92,32 @@
         cursor: pointer;
       `;
 
-      // 🧠 Suggestion on click
+      // 🧠 On Click → Fancy modal popup
       badge.addEventListener('click', () => {
-        alert(`🧠 Tip:\n${result.suggestion || 'Try switching to more sustainable alternatives.'}`);
+        const titleMsg = result.greenScore > 80 ? "✅ Great Choice!" :
+                         result.greenScore > 50 ? "⚠️ Moderate Eco Impact" :
+                         "❌ Not Eco Friendly";
+
+        const mainMsg = result.greenScore > 80
+          ? "This product is highly eco-friendly!"
+          : result.greenScore > 50
+            ? "This product is average on sustainability. Consider better options."
+            : "This product has a high carbon footprint. Here's why and what you can try instead.";
+
+        const suggestions = result.greenScore > 80 ? [] :
+                            result.greenScore > 50 ? [
+                              { name: "Eco Soap Bar", link: "https://www.amazon.in/dp/B09ABC123" },
+                              { name: "Sustainable Toothpaste", link: "https://www.amazon.in/dp/B07XYZ987" }
+                            ] : [
+                              { name: "Bamboo Toothbrush", link: "https://www.amazon.in/dp/B08ECO111" },
+                              { name: "Refillable Cleaner", link: "https://www.amazon.in/dp/B09ECO222" },
+                              { name: "Natural Detergent", link: "https://www.amazon.in/dp/B08ECO333" }
+                            ];
+
+        showEcoModal(titleMsg, mainMsg, suggestions);
       });
 
-      // 🧩 Inject badge
+      // 🧩 Inject into product card
       card.style.position = 'relative';
       card.appendChild(badge);
     } catch (err) {
